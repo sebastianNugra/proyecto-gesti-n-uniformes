@@ -3,7 +3,7 @@ package com.login;
 import com.Formularios.Clientes;
 import com.Formularios.Principal;
 import com.Formularios.frm_Producto;
-import com.Formularios.frm_Ventas;
+import com.Formularios.frm_Venta;
 import com.Formularios.frm_Inventario;
 import java.awt.BorderLayout;
 
@@ -14,7 +14,7 @@ public class frm_principal extends javax.swing.JFrame {
 
     private Principal panelPrincipal;
     private frm_Inventario panelInventario;
-    private frm_Ventas panelVentas;
+    private frm_Venta panelVentas;
     private Clientes panelClientes;
     private frm_Producto panelProducto;
 
@@ -24,7 +24,7 @@ public class frm_principal extends javax.swing.JFrame {
         panelPrincipal = new Principal();
         panelInventario = new frm_Inventario();
         panelProducto = new frm_Producto();
-        panelVentas = new frm_Ventas();
+        panelVentas = new frm_Venta();
         panelClientes = new Clientes();
         mostrarPanel(panelPrincipal);
     }
@@ -55,6 +55,9 @@ public class frm_principal extends javax.swing.JFrame {
         jLabel12 = new javax.swing.JLabel();
         app_name = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
+        btn_vccc = new javax.swing.JPanel();
+        jLabel16 = new javax.swing.JLabel();
+        jLabel17 = new javax.swing.JLabel();
         content = new javax.swing.JPanel();
         Header = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
@@ -98,7 +101,7 @@ public class frm_principal extends javax.swing.JFrame {
         jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/imagenes/uniforme.png"))); // NOI18N
         btn_producto.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 30, 30));
 
-        Menu.add(btn_producto, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 390, 220, 50));
+        Menu.add(btn_producto, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 440, 220, 50));
 
         btn_prin.setBackground(new java.awt.Color(21, 101, 192));
         btn_prin.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -155,7 +158,7 @@ public class frm_principal extends javax.swing.JFrame {
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/imagenes/ventas.png"))); // NOI18N
         btn_ventas.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 30, 30));
 
-        Menu.add(btn_ventas, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 340, 220, -1));
+        Menu.add(btn_ventas, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 390, 220, -1));
 
         btn_clientes.setBackground(new java.awt.Color(18, 90, 173));
         btn_clientes.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -185,7 +188,7 @@ public class frm_principal extends javax.swing.JFrame {
         jLabel8.setText("Clientes");
         btn_clientes.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 10, -1, 30));
 
-        Menu.add(btn_clientes, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 440, 220, -1));
+        Menu.add(btn_clientes, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 490, 220, -1));
 
         btn_reportes.setBackground(new java.awt.Color(18, 90, 173));
         btn_reportes.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -214,7 +217,7 @@ public class frm_principal extends javax.swing.JFrame {
         jLabel10.setText("Reportes");
         btn_reportes.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 10, -1, 30));
 
-        Menu.add(btn_reportes, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 490, 220, -1));
+        Menu.add(btn_reportes, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 540, 220, -1));
 
         btn_inventario.setBackground(new java.awt.Color(18, 90, 173));
         btn_inventario.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -237,7 +240,7 @@ public class frm_principal extends javax.swing.JFrame {
 
         jLabel14.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel14.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel14.setText("Inventario");
+        jLabel14.setText("...............");
         btn_inventario.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 10, -1, 30));
 
         jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/imagenes/inventario.png"))); // NOI18N
@@ -253,6 +256,35 @@ public class frm_principal extends javax.swing.JFrame {
         jSeparator1.setForeground(new java.awt.Color(0, 0, 0));
         jSeparator1.setPreferredSize(new java.awt.Dimension(50, 5));
         Menu.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 190, 190, 30));
+
+        btn_vccc.setBackground(new java.awt.Color(18, 90, 173));
+        btn_vccc.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        btn_vccc.setPreferredSize(new java.awt.Dimension(270, 51));
+        btn_vccc.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn_vcccMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btn_vcccMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btn_vcccMouseExited(evt);
+            }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                btn_vcccMousePressed(evt);
+            }
+        });
+        btn_vccc.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel16.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel16.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel16.setText("...");
+        btn_vccc.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 10, -1, 30));
+
+        jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/imagenes/ventas.png"))); // NOI18N
+        btn_vccc.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 30, 30));
+
+        Menu.add(btn_vccc, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 340, 220, -1));
 
         fondo.add(Menu, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 220, 670));
 
@@ -479,6 +511,22 @@ public class frm_principal extends javax.swing.JFrame {
         setColor(btn_reportes);
     }//GEN-LAST:event_btn_reportesMouseClicked
 
+    private void btn_vcccMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_vcccMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_vcccMouseClicked
+
+    private void btn_vcccMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_vcccMouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_vcccMouseEntered
+
+    private void btn_vcccMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_vcccMouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_vcccMouseExited
+
+    private void btn_vcccMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_vcccMousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_vcccMousePressed
+
     void setColor(JPanel panel) {
         panel.setBackground(new Color(21, 101, 192));
     }
@@ -500,6 +548,7 @@ public class frm_principal extends javax.swing.JFrame {
     private javax.swing.JPanel btn_prin;
     private javax.swing.JPanel btn_producto;
     private javax.swing.JPanel btn_reportes;
+    private javax.swing.JPanel btn_vccc;
     private javax.swing.JPanel btn_ventas;
     public static javax.swing.JPanel content;
     private javax.swing.JLabel fecha;
@@ -510,6 +559,8 @@ public class frm_principal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;

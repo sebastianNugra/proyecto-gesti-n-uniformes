@@ -17,7 +17,6 @@ public class frm_Producto extends javax.swing.JPanel {
     public frm_Producto() {
         initComponents();
         mtd_tabla_detalle();
-
     }
 
     @SuppressWarnings("unchecked")
@@ -140,7 +139,7 @@ public class frm_Producto extends javax.swing.JPanel {
         jSeparator6.setForeground(new java.awt.Color(0, 0, 153));
 
         cb_prenda.setBackground(new java.awt.Color(255, 255, 255));
-        cb_prenda.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Chompa", "Camiseta", "Camisa", "Pantalon", "Panalotena", "Gorras", "Medias" }));
+        cb_prenda.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Chompa", "Camiseta", "Camisa", "Pantalon", "Panalotena", "Short", "Gorras", "Medias", "Corbatas" }));
 
         jLabel8.setFont(new java.awt.Font("Roboto Condensed", 1, 14)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(0, 0, 0));
@@ -152,7 +151,7 @@ public class frm_Producto extends javax.swing.JPanel {
         jSeparator7.setForeground(new java.awt.Color(0, 0, 153));
 
         cb_colegio.setBackground(new java.awt.Color(255, 255, 255));
-        cb_colegio.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Unidad Educativa Zoila Esperanza Palacios", "Unidad Educativa Manuel J. Calle", "Unidad Educativa Mary Corilé", "Unidad Educativa Republica de Chile" }));
+        cb_colegio.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Zoila Esperanza Palacios", "Manuel J. Calle", "Mary Corilé", "Republica de Chile", "Otros" }));
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -173,25 +172,27 @@ public class frm_Producto extends javax.swing.JPanel {
                                     .addComponent(jLabel1))))
                         .addGap(18, 18, 18)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addComponent(jSeparator1)
-                                .addComponent(cb_colegio, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addGroup(jPanel2Layout.createSequentialGroup()
                                     .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                            .addComponent(jSeparator4, javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(txt_precio, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 117, Short.MAX_VALUE)
-                                            .addComponent(jSeparator5, javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(txt_cantidad, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                            .addComponent(jSeparator3, javax.swing.GroupLayout.Alignment.LEADING))
-                                        .addComponent(txt_talla, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGap(55, 55, 55)
-                                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                        .addComponent(btn_eliminarProduc, javax.swing.GroupLayout.DEFAULT_SIZE, 111, Short.MAX_VALUE)
-                                        .addComponent(btn_actualizarProduc, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(btn_buscarProduc, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(btn_guardarProduc, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                    .addGap(0, 22, Short.MAX_VALUE)))
+                                        .addGroup(jPanel2Layout.createSequentialGroup()
+                                            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                                    .addComponent(jSeparator4, javax.swing.GroupLayout.Alignment.LEADING)
+                                                    .addComponent(txt_precio, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 117, Short.MAX_VALUE)
+                                                    .addComponent(jSeparator5, javax.swing.GroupLayout.Alignment.LEADING)
+                                                    .addComponent(txt_cantidad, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                    .addComponent(jSeparator3, javax.swing.GroupLayout.Alignment.LEADING))
+                                                .addComponent(txt_talla, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addGap(55, 55, 55)
+                                            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                                .addComponent(btn_eliminarProduc, javax.swing.GroupLayout.DEFAULT_SIZE, 111, Short.MAX_VALUE)
+                                                .addComponent(btn_actualizarProduc, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                .addComponent(btn_buscarProduc, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                .addComponent(btn_guardarProduc, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                                        .addComponent(cb_colegio, javax.swing.GroupLayout.PREFERRED_SIZE, 239, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGap(0, 0, Short.MAX_VALUE)))
                             .addComponent(jSeparator6, javax.swing.GroupLayout.PREFERRED_SIZE, 183, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGap(10, 10, 10)
@@ -203,7 +204,7 @@ public class frm_Producto extends javax.swing.JPanel {
                             .addComponent(cb_tipo, javax.swing.GroupLayout.PREFERRED_SIZE, 177, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(cb_prenda, 0, 183, Short.MAX_VALUE)
                             .addComponent(jSeparator7))))
-                .addContainerGap(32, Short.MAX_VALUE))
+                .addContainerGap(48, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

@@ -304,7 +304,7 @@ public class Clientes extends javax.swing.JPanel {
         Cliente objeto = new Cliente(Integer.parseInt(txt_buscarid.getText()), txt_cedula.getText(), txt_nombre.getText(), txt_email.getText(), txt_telefono.getText());
         try {
             if (objeto.mtd_actualizar()) {
-                JOptionPane.showMessageDialog(null, "Cliente actualizado exitosamente");
+                JOptionPane.showMessageDialog(null, "Cliente actualizado correctamente");
                 mtd_tabla_detalle();
                 mtd_limpiartextos();
             } else {
@@ -321,7 +321,7 @@ public class Clientes extends javax.swing.JPanel {
             if (objeto.rgtrDuplicado() == false) {
                 boolean guardado = objeto.mtd_guardar();
                 if (guardado == true) {
-                    JOptionPane.showMessageDialog(null, "Se guardó bien el cliente");
+                    JOptionPane.showMessageDialog(null, "Cliente guardado correctamente");
                     mtd_tabla_detalle();
                     mtd_limpiartextos();
                 }
@@ -361,7 +361,7 @@ public class Clientes extends javax.swing.JPanel {
             int confirmar = JOptionPane.showConfirmDialog(null, "¿Estás seguro de eliminar este cliente?", "Confirmar", JOptionPane.YES_NO_OPTION);
             if (confirmar == JOptionPane.YES_OPTION) {
                 if (objeto.mtd_eliminar()) {
-                    JOptionPane.showMessageDialog(null, "Cliente eliminado exitosamente");
+                    JOptionPane.showMessageDialog(null, "Cliente eliminado correctamente");
                     mtd_tabla_detalle();
                     mtd_limpiartextos();
                 } else {
